@@ -1,9 +1,11 @@
 #pragma once
-#define numOfQueens 8
+#define numOfQueens 4
 
 struct Position {
 	int x;
 	int y;
+
+	Position() : x(-1), y(-1) {}
 };
 
 //Struct to store attributes of each queen
@@ -11,7 +13,9 @@ struct Queen {
 	//Position in the form of (x,y) where (0,0) is lower left cell
 	Position pos;
 	int numOfConflicts;
-	bool active = false;
+	bool active;
+
+	Queen() : numOfConflicts(-1), active(false) {}
 };
 
 
