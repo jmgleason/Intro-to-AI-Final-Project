@@ -11,7 +11,7 @@ struct Queen {
 	//Position in the form of (x,y) where (0,0) is lower left cell
 	Position pos;
 	int numOfConflicts;
-	bool active = false;
+	bool active;
 };
 
 
