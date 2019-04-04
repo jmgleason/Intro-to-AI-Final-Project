@@ -1,10 +1,10 @@
 CC = g++
-CFLAGS = -std=c++14 -Wall
+CFLAGS = -std=c++0x -Wall
 
-all: main clean
+all: main.o main clean
 
-main.o: BTmain.cpp Backtracking.hpp
-	$(CC) -c BTmain.cpp -o $@ $(CFLAGS)
+main.o: BTMain.cpp Backtracking.hpp
+	$(CC) -c BTMain.cpp -o $@ $(CFLAGS)
 
 main: main.o
 	$(CC) -o $@ $^ $(CFLAGS)
