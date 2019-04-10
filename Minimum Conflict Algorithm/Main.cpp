@@ -7,6 +7,7 @@ using namespace std;
 
 
 int main() {
+label:
 	//Initializing the array of the grid and default values
 	struct Queen Grid[numOfQueens][numOfQueens];
 
@@ -87,7 +88,7 @@ int main() {
 		}
 	}
 
-
+	int iterationCount = 0;
 	int randomSelection;
 	Queen selectedQueen;
 	//Run constraint satisfaction algorithm with minimum-conflict heuristic
@@ -141,7 +142,11 @@ int main() {
 
 
 
+		iterationCount++;
 
+		if (iterationCount > 300) {
+			goto label;
+		}
 	}
 
 	//Displaying final positions of the queens
@@ -153,6 +158,8 @@ int main() {
 			}
 		}
 	}
+
+	cout << endl << "Number of iterations to find solution:  " << iterationCount - 1;
 
 	int x = 0;
 	cin >> x;

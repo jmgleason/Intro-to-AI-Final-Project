@@ -1,5 +1,5 @@
 #pragma once
-#define numOfQueens 4
+#define numOfQueens 5
 
 struct Position {
 	int x;
