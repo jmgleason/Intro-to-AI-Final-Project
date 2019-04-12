@@ -78,13 +78,16 @@ QueenGrid CSP_Backtracking(QueenGrid grid, std::vector<Queen> queenPos ){
 //Display NxN queen grid
 //It displays from left to right and from top to bottom
 //(x, y) = (0, 0) is the bottom-left corner
-void PrintGrid( QueenGrid grid ){
+void PrintGrid( QueenGrid qg ){
 
     /* y-axis interation */
     for( int y=numOfQueens-1; y>=0; --y ){
         
         /* Display the first top border */
         if( y==numOfQueens-1 ){
+            
+            //Display 'y' axis
+            std::cout<<'y'<<'\n';
 
             //just diff display style depending on num of digits
             if(numOfQueens>=100){ std::cout<<"    |";}
@@ -102,7 +105,7 @@ void PrintGrid( QueenGrid grid ){
         else { std::cout<<y+1<<" |"; }
 
         for( int x=0; x<numOfQueens; ++x ){
-            if( grid.Grid[x][y].active == true ){
+            if( qg.Grid[x][y].active == true ){
                 std::cout<<" X "<<"|";
             }
             else {
@@ -134,7 +137,8 @@ void PrintGrid( QueenGrid grid ){
                 else if(numOfQueens>=10){ if(i+1>=10){ std::cout<<" "<<i+1<<" "; } else { std::cout<<" "<<i+1<<"  "; }}
                 else { std::cout<<" "<<i+1<<"  "; }
             }
-            std::cout<<'\n';
+            //Display 'x' axis
+            std::cout<<' '<<'x'<<'\n';
         }
     }
 }
