@@ -7,7 +7,3 @@ Below is spreadsheet-like data. Copy and paste on excel or google spreadsheet.
 
 Pure Minimum Conflict with Backtracking Algorithm Summary
 NQueen	AvgTime	AvgIteration	Number of Trials
-10	943	652	50
-10	796	534	50
-10	632	439	50
-10	690	508	50
