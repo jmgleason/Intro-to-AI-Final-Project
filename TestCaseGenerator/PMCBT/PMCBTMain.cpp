@@ -22,9 +22,9 @@ int main(){
 
     //Open file
     std::ofstream FileD;
-    FileD.open( "TCD_PureMinConflict.txt", std::ios::out | std::ios::app ); assert(FileD.is_open());
+    FileD.open( "TCD_PureMinConflictWithBT.txt", std::ios::out | std::ios::app ); assert(FileD.is_open());
     std::ofstream FileS;
-    FileS.open( "TCS_PureMinConflict.txt", std::ios::out | std::ios::app ); assert(FileS.is_open());
+    FileS.open( "TCS_PureMinConflictWithBT.txt", std::ios::out | std::ios::app ); assert(FileS.is_open());
 
     //Create variables
     struct Result result;
