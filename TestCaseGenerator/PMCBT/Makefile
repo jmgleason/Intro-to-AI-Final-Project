@@ -3,8 +3,8 @@ CFLAGS = -std=c++0x -Wall
 
 all: main.o main clean
 
-main.o: TCMain.cpp
-	$(CC) -c TCMain.cpp -o $@ $(CFLAGS)
+main.o: PMCBTMain.cpp PMin_ConflictsBT.hpp
+	$(CC) -c PMCBTMain.cpp -o $@ $(CFLAGS)
 
 main: main.o
 	$(CC) -o $@ $^ $(CFLAGS)

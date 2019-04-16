@@ -3,7 +3,7 @@
 #include <time.h>
 #include <chrono>
 #include "Queen.h"
-#include "PMin_Conflicts.hpp"
+#include "PMin_ConflictsBT.hpp"
 
 #include <assert.h>
 #include <fstream>
