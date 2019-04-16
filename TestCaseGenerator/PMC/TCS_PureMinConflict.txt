@@ -7,5 +7,3 @@ Below is spreadsheet-like data. Copy and paste on excel or google spreadsheet.
 
 Pure Minimum Conflict Algorith Summary
 NQueen	AvgTime	AvgIteration	Number of Trials
-10	771	550	50
-10	759	561	50
